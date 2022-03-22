@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": [
+      "es6"
+    ],
+    // Garante que arquivos .d.ts são criados pelo tsc, mas não arquivos .js
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    // Garante que o Babel pode transpilar de maneira segura os arquivos no projeto TypeScript
+    "isolatedModules": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@actions/*": ["src/App/Actions/*"],
+      "@shared/*": ["src/Shared/*"],
+      "@useCases/*": ["src/App/UseCases/*"],
+      "@Entities/*": ["src/App/Entities/*"],
+      "@Repositories/*": ["src/App/Repositories/*"],
+      "@Dto/*": ["src/App/Dto/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
