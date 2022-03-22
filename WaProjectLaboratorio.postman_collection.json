@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "f2a11e81-b629-4171-bddd-7f2a23075e6d",
+		"name": "WaProjectLaboratorio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/auth/login",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exames",
+			"item": [
+				{
+					"name": "Listar Todos Exames",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Exame",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"teste\",\n    \"tipo\": \"fda\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Exame",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nome do Exame 55\",\n    \"tipo\": \"imagem\",\n    \"status\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames/4ef85b89-dee7-4221-a9d3-f788eaf19ee4",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames",
+								"4ef85b89-dee7-4221-a9d3-f788eaf19ee4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar Exame",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames/4ef85b89-dee7-4221-a9d3-f788eaf19ee4",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames",
+								"4ef85b89-dee7-4221-a9d3-f788eaf19ee4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Exame",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames/6fdfaba9-73d9-45de-8289-203a7724e5d3",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames",
+								"6fdfaba9-73d9-45de-8289-203a7724e5d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Laboratorio por Exame",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/exames/6fdfaba9-73d9-45de-8289-203a7724e5d3/laboratorios",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"exames",
+								"6fdfaba9-73d9-45de-8289-203a7724e5d3",
+								"laboratorios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laboratorios",
+			"item": [
+				{
+					"name": "Listar Todos Laboratórios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Laboratorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nome do Exame 1\",\n    \"tipo\": \"analise\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Laboratório",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nome do Exame 55\",\n    \"tipo\": \"imagem\",\n    \"status\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios/4ef85b89-dee7-4221-a9d3-f788eaf19ee4",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"4ef85b89-dee7-4221-a9d3-f788eaf19ee4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar Laboratório",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios/4ef85b89-dee7-4221-a9d3-f788eaf19ee4",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"4ef85b89-dee7-4221-a9d3-f788eaf19ee4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Laboratório",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios/6fdfaba9-73d9-45de-8289-203a7724e5d3",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"6fdfaba9-73d9-45de-8289-203a7724e5d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vincular Exame",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios//exame/",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"",
+								"exame",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desvincular Exame",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios//exame/",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"",
+								"exame",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Exames por Laboratorio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_api_wa}}/v1/laboratorios/26b6d605-87be-4059-ac37-453f858bbfdc/exames",
+							"host": [
+								"{{base_api_wa}}"
+							],
+							"path": [
+								"v1",
+								"laboratorios",
+								"26b6d605-87be-4059-ac37-453f858bbfdc",
+								"exames"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
