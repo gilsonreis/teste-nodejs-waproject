@@ -5,10 +5,8 @@
     "lib": [
       "es6"
     ],
-    // Garante que arquivos .d.ts são criados pelo tsc, mas não arquivos .js
     "declaration": true,
     "emitDeclarationOnly": true,
-    // Garante que o Babel pode transpilar de maneira segura os arquivos no projeto TypeScript
     "isolatedModules": true,
     "allowJs": true,
     "outDir": "./dist",
