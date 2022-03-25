@@ -14,7 +14,7 @@ Ambos estão rodando em containers Dockers.
 
 Primeiramente, deve-se realizar o clone do projeto utilizando GIT. Após isso, deve-se duplicar e renomear o arquivo .env.dist para .env, conforme comando abaixo:
 ```shell
-> mv .env.dist .env
+> cp .env.dist .env
 ```
 
 Após isso, execute o comando para subir os container do Docker:
